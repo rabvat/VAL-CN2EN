@@ -38,12 +38,12 @@ del /f /s /q %path%\live\ShooterGame\Content\Paks\zh_CN_Text-WindowsClient.ucas
 del /f /s /q %path%\live\ShooterGame\Content\Paks\zh_CN_Text-WindowsClient.utoc
 echo.
 :done
-echo [+]删除完毕,程序将在10秒内自动退出...(按任意键也可以退出)
+echo [+]删除完毕,脚本将在10秒内自动退出...(按任意键也可以退出)
 timeout 10>nul
 exit
 :fail
 echo [+]删除失败,请在游戏启动之前使用本脚本！
-echo [+]程序将在10秒内自动退出...(按任意键也可以退出)
+echo [+]脚本将在10秒内自动退出...(按任意键也可以退出)
 timeout 10>nul
 exit
 :askpath
@@ -61,11 +61,22 @@ goto load
 goto askpath
 :winversion
 echo [+]何意味，您的系统版本甚至不是Windows 10/11...连无畏契约都启动不了...
-echo [+]程序将在10秒内自动退出...(按任意键也可以退出)
+echo [+]脚本将在10秒内自动退出...(按任意键也可以退出)
 timeout 10>nul
 exit
 :nopowershell
-echo [+]启动失败！您的电脑未安装Powershell！(怎么可能...)
-echo [+]程序将在10秒内自动退出...(按任意键也可以退出)
+set pspath=%systemdrive%\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+echo [+]启动失败！未检测到Powershell！(怎么可能...)
+echo [+]脚本将使用默认路径...(%pspath%)
+if not exist "%pspath%" goto norealpowershell
+echo.
+echo [+]已找到默认路径下的Powershell!
+echo.
+goto versioncheck
+:norealpowershell
+echo.
+echo [+]启动失败！您的电脑未安装Powershell！
+echo [+]脚本将在10秒内自动退出...(按任意键也可以退出)
 timeout 10>nul
 exit
+
