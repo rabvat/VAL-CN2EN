@@ -44,7 +44,7 @@ exit
 del /f /s /q "%temp%\VAL_PATH.txt"
 %systemdrive%\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -Command "& {Add-Type -AssemblyName Microsoft.VisualBasic; [Microsoft.VisualBasic.Interaction]::InputBox('请输入您的无畏契约安装路径,这在VAL CN2EN的首次启动是必要的。', 'VAL CN2EN')}" > "%TEMP%\VAL_PATH.txt"
 set /p path=<"%TEMP%\VAL_PATH.txt"
-if not exist %path%\live\VALORANT.exe goto pathfailed
+if not exist "%path%\无畏契约卸载.exe" goto pathfailed
 echo [+]已保存路径,下一次启动将不会再次询问无畏契约路径。
 echo.
 goto load
