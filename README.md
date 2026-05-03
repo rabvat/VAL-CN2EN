@@ -10,7 +10,7 @@
 在当前页面找到Release并点入
 <img width="1357" height="950" alt="image" src="https://github.com/user-attachments/assets/92a42648-7264-4df9-9b65-3dfc7fb0d158" />
 在Release界面中点击 *Source Code (zip)* 便可下载VAL CN2EN
-<br><br>请注意！版本越新越好！请尽量下载标记Latest的版本！<br>请注意！版本越新越好！请尽量下载标记Latest的版本！<br>请注意！版本越新越好！请尽量下载标记Latest的版本！
+<br><br>请注意！版本越新越好！请尽量下载标记Latest的版本！<br>请注意！版本越新越好！请尽量下载标记Latest的版本！<br>请注意！版本越新越好！请尽量下载标记Latest的版本！<br>
 <img width="471" height="344" alt="image" src="https://github.com/user-attachments/assets/4635307b-b91f-4f50-8d09-0e3a8be306fe" />
 
 使用
