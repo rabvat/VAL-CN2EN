@@ -15,6 +15,7 @@
 使用
 -
 解压完毕后，在文件夹中找到 *VAL CN2EN.bat*，打开即可。
+<img width="423" height="205" alt="image" src="https://github.com/user-attachments/assets/467fe109-a3fb-4d60-8d7d-c36c62672a7e" />
 
 添加路径
 -
