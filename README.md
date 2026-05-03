@@ -36,6 +36,6 @@ VAL CN2EN在检测完安装路径合法性后，将会自动保存路径以便�
 关于添加路径的疑难解答
 -
 如果VAL CN2EN错误地把您的路径当成合法路径 可以通过如下的方式解决:<br>
-<br>1 - 按下Win + R 弹出运行提示符；
-<br>2 - 输入 *cmd.exe /c del /f /s /q "%temp%\VAL_PATH.txt"*；
-<br>3 - 完毕。<br>
+<br>1 - 按下Win + R 弹出运行提示符
+<br>2 - 输入 *cmd.exe /c del /f /s /q "%temp%\VAL_PATH.txt"*
+<br>3 - 完毕<br>
