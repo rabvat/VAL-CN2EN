@@ -13,6 +13,8 @@ echo.
 echo 免责声明:
 echo 本脚本仅用于学习与交流用途,由本脚本造成的任何后果(不仅限于账号封禁),作者概不负责！
 echo.
+ver|find "10.0." >nul&&goto pathcheck||goto winversion
+:pathcheck
 if not exist "%temp%\VAL_PATH.txt" goto askpath
 :load
 echo [+]无畏契约安装路径:%path%
@@ -39,7 +41,6 @@ echo [+]删除失败,请在游戏启动之前使用本脚本！
 echo [+]程序将在10秒内自动退出...(按任意键也可以退出)
 timeout 10>nul
 exit
-
 :askpath
 del /f /s /q "%temp%\VAL_PATH.txt"
 %systemdrive%\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -Command "& {Add-Type -AssemblyName Microsoft.VisualBasic; [Microsoft.VisualBasic.Interaction]::InputBox('请输入您的无畏契约安装路径,这在VAL CN2EN的首次启动是必要的。', 'VAL CN2EN')}" > "%TEMP%\VAL_PATH.txt"
@@ -51,3 +52,8 @@ goto load
 :pathfailed
 %systemdrive%\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -Command "& {Add-Type -AssemblyName System.Windows.Forms; [System.Windows.Forms.MessageBox]::Show('无法找到无畏契约执行文件,请定位至名为“无畏契约(2001715)”的文件夹！', '安装路径错误！');}"
 goto askpath
+:winversion
+echo [+]何意味，您的系统版本甚至不是Windows 10/11...连无畏契约都启动不了...
+echo [+]程序将在10秒内自动退出...(按任意键也可以退出)
+timeout 10>nul
+exit
