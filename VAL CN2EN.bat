@@ -12,6 +12,7 @@ cls
 echo.
 echo 免责声明:
 echo 本脚本仅用于学习与交流用途,由本脚本造成的任何后果(不仅限于账号封禁),作者概不负责！
+echo 项目地址 - https://github.com/rabvat/VAL-CN2EN
 echo.
 :powershellcheck
 where powershell|find "powershell.exe" >nul&&goto versioncheck||goto nopowershell
