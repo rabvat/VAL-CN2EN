@@ -14,12 +14,12 @@
 
 使用
 -
-解压完毕后，在文件夹中找到 *VAL CN2EN.bat*，打开即可。
+解压完毕后，在文件夹中找到 *VAL CN2EN.bat*，打开即可。<br>
 <img width="423" height="205" alt="image" src="https://github.com/user-attachments/assets/467fe109-a3fb-4d60-8d7d-c36c62672a7e" />
 
 添加路径
 -
-由于一些限制，VAL CN2EN脚本并不会自动寻找国服无畏契约的安装路径，因此您需要自动添加路径。但请放心，这是一个简单的过程。
+由于Windows的限制，VAL CN2EN脚本并不会自动寻找国服无畏契约的安装路径，因此您需要自动添加路径。但请放心，这是一个简单的过程。
 <br>
 <br>1 - 在WeGame中打开安装路径
 <img width="1280" height="822" alt="586809227-a4dfeec3-f787-4cf6-9464-1f0fbbb8e7e5" src="https://github.com/user-attachments/assets/237bcfe2-b430-4e68-a4aa-76663bf8b11e" />
@@ -33,17 +33,17 @@
 VAL CN2EN在检测完安装路径合法性后，将会自动保存路径以便下次使用。
 <img width="979" height="512" alt="image" src="https://github.com/user-attachments/assets/e61c0688-2ae7-49df-b27d-983a27021e8d" />
 
-关于添加路径的疑难解答
+关于无畏契约路径的疑难解答
 -
-如果VAL CN2EN错误地把您的路径当成合法路径 可以通过如下的方式解决:<br>
-<br>1 - 按下Win + R 弹出运行提示符
-<br>2 - 输入 *cmd.exe /c del /f /s /q "%temp%\VAL_PATH.txt"*
+如果您错误的将异常的路径导入了VAL CN2EN,您可以通过如下的方式解决:<br>
+<br>1 - 使用管理员权限运行提示符
+<br>2 - 输入 *del /f /s /q "%temp%\VAL_PATH.txt"* 并回车
 <br>3 - 完毕<br>
 
 注意事项
 -
-1 - 本脚本不仅对WeGame启动的无畏契约起效果，还对无畏契约启动器有效果，在开启无畏契约启动器后打开脚本即可。<br><br>
-2 - 请在WeGame启动游戏前运行此脚本，否则脚本将无法运行！<br><br>
-3 - 本脚本只适用于Windows 10/11，且安装了PowerShell的环境。<br><br>
-4 - 360等杀毒软件可能会误报本脚本含有病毒，请放行。<br><br>
-5 - 在使用完脚本后，第二次打开游戏WeGame会提示需要修补游戏文件，修复并继续即可。<br>
+1 - 请在WeGame启动游戏前运行此脚本，否则脚本将无法运行！<br><br>
+2 - 本脚本只适用于Windows 10/11，且安装了PowerShell的环境。<br><br>
+3 - 360等杀毒软件可能会误报本脚本含有病毒，请放行。<br><br>
+4 - 在使用完脚本后，第二次打开游戏WeGame会提示需要修补游戏文件，修复并继续启动即可。<br>
+5 - 无畏契约启动器不会对语言文件进行校验，可以直接使用脚本。
