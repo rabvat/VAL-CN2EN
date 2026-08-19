@@ -29,7 +29,7 @@ if %errorlevel% neq 0 (
     exit /b
 )
 
-set version=v1.5-github-release
+set version=v1.6-github-release
 
 set /p path=<"%TEMP%\VAL_PATH.txt"
 cls
