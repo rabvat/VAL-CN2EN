@@ -1,18 +1,54 @@
 @echo off
 title VAL CN2EN
 chcp 65001>nul
+
+cls
+echo    _______   __     ___   _______   __
+echo   / ____/ ^| / /    ^|__ \ / ____/ ^| / /
+echo  / /   /  ^|/ /_______/ // __/ /  ^|/ / 
+echo / /___/ /^|  /_____/ __// /___/ /^|  /  
+echo \____/_/ ^|_/     /____/_____/_/ ^|_/   
+echo.
+echo ==================================================================================
+echo  VAL-CN2EN 需要管理员权限方能运行。
+
+echo  这是为了避免权限问题而不得不做的请求；
+
+echo  同时，请不要从非 Github 渠道下载 VAL-CN2EN，因为这样做可能会对您的电脑造成危害。
+
+echo.
+
+echo    - https://github.com/rabvat/VAL-CN2EN/
+
+echo.
+
 :admincheck
 net session >nul 2>&1
 if %errorlevel% neq 0 (
     PowerShell -Command "Start-Process '%~dpnx0' -Verb RunAs"
     exit /b
 )
+
+set version=v1.5-github-release
+
 set /p path=<"%TEMP%\VAL_PATH.txt"
 cls
+
+echo    _______   __     ___   _______   __
+echo   / ____/ ^| / /    ^|__ \ / ____/ ^| / /
+echo  / /   /  ^|/ /_______/ // __/ /  ^|/ / 
+echo / /___/ /^|  /_____/ __// /___/ /^|  /  
+echo \____/_/ ^|_/     /____/_____/_/ ^|_/   %version%
 echo.
-echo 免责声明:
-echo 本脚本仅用于学习与交流用途,由本脚本造成的任何后果(不仅限于账号封禁),作者概不负责！
-echo 项目地址 - https://github.com/rabvat/VAL-CN2EN
+echo ==================================================================================
+echo.
+echo    - https://github.com/rabvat/VAL-CN2EN/
+echo.
+echo [+]免责声明:
+echo [+]本脚本仅用于学习与交流用途,由本脚本造成的任何后果(不仅限于账号封禁),作者概不负责！
+echo [+]若使用时遇到问题，请在 Github 上提一个 Issue 。
+echo.
+echo ==================================================================================
 echo.
 :powershellcheck
 where powershell|find "powershell.exe" >nul&&goto versioncheck||goto nopowershell
